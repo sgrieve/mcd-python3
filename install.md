@@ -40,7 +40,7 @@ $ make check install
 
 ## testing MCD
 
-If all of the data is downloaded for all the scenarios, the full tests will pass.
+If all of the data is downloaded for all the scenarios, the full tests will pass, otherwise they will fail at the warm scenario.
 
 ```sh
 $ cd MCD_6.1/mcd/
@@ -56,12 +56,12 @@ $ ./TEST_SCRIPT
 ## Python bindings
 
 ```sh
-$ git clone https://github.com/aymeric-spiga/mcd-python.git
-$ cd mcd-python
+$ git clone https://github.com/sgrieve/mcd-python3.git
+$ cd mcd-python3
 $ ml python/3.6.3
 $ python3 -m venv env
 $ source env/bin/activate
 $ pip3 install numpy
-$ export PYTHONPATH=$PYTHONPATH:/data/scratch/faw513/mcd-python
+$ export PYTHONPATH=$PYTHONPATH:/data/scratch/faw513/mcd-python3
 $ python3 quicktest.py
 ```
