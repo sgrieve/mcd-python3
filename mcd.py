@@ -8,8 +8,7 @@
 
 ###
 from fmcd import mcd      # MCD compiled with f2py
-from fmcd import dataloc  # location of MCD data file
-from fmcd import dataver  # compiled version of MCD
+
 ###
 import numpy as np
 import matplotlib.pyplot as mpl
@@ -48,8 +47,8 @@ class mcd_class():
     def __init__(self):
     # default settings
         ## 0. general stuff
-        self.name      = "MCD_v"+dataver # this is coming from fmcd
-        self.dset      = dataloc # this is coming from fmcd
+        self.name      = "MCD_v6.1"  # Hard coding this importing it from the fmcd file causes issues
+        self.dset      = " "  # If this is a space, it assumes a symlink called MCD_DATA within the python root directory
         self.ack       = "Mars Climate Database (c) LMD/OU/IAA/ESA/CNES"
         ## 1. spatio-temporal coordinates
         self.lat       = 0.
