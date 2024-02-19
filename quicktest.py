@@ -9,4 +9,3 @@ req.xz = 1
 req.xdate = 150.6
 req.update()
 req.printmeanvar()
-
