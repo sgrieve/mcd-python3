@@ -6,18 +6,18 @@
 ###
 ### - requirements: f2py tool + netCDF librairies compiled in Fortran
 ###
-### ---> This should be used to make MCD fortran stuff directly accessible in python 
+### ---> This should be used to make MCD fortran stuff directly accessible in python
 ### ---> This script is for gfortran, but it is easy to adapt to your other compilers
 ### ---> A file fmcd.so should be created
 ### ---> See mcd.py for use in python. Very easy!
 ###
-### AS. 17/04/2012. 
+### AS. 17/04/2012.
 ### TP/ AB : 13/10/2022 : update for MCD6.1
 ######################################################################################
 
 
-NETCDF=/home/marshttp/NETCDF/netcdf64-4.0.1_gfortran_fPIC/
-wheremcd="/home/marshttp/MCD_6.1/"
+NETCDF=/data/home/faw513/install/netcdf/
+wheremcd="/data/scratch/faw513/MCD_6.1/"
 
 
 version="6.1"
